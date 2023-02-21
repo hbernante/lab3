@@ -6,7 +6,7 @@ use CodeIgniter\Model;
 
 class NewsModel extends Model
 {
-    protected $table = 'news';
+    protected $table = 'hbernante_news';
 	
 	    public function getNews($slug = false)
     {
