@@ -8,7 +8,7 @@ class GuestModel extends Model
 {
     protected $table = 'hbernante_myguests';
 
-    protected $allowedFields = ['name', 'email', 'website', 'comment', 'gender'];
+    protected $allowedFields = ['name', 'email', 'comment'];
 
 
 	 public function getGuest()
