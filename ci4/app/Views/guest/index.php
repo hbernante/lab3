@@ -5,9 +5,16 @@
     <?php foreach ($guest as $guest_item): ?>
 
         <div class="main">
-        <h3>    <?= esc($guest_item['name']) ?></h3>>
-		<p> 	<?= esc($guest_item['email']) ?>
-		<p> 	<?= esc($guest_item['comment']) ?>
+		<br>
+		<b>
+		<table>
+		<tr>
+		<th>-----</th>
+		 <th><?= esc($guest_item['name']) ?> </th>
+         <th><?= esc($guest_item['email']) ?> </th>
+		 <th><?= esc($guest_item['comment']) ?> </th>
+		</tr>
+		</table>
         </div>
     <?php endforeach ?>
 
