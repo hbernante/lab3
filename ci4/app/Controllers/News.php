@@ -3,11 +3,11 @@
 namespace App\Controllers;
 
 use App\Models\NewsModel;
+use CodeIgniter\Exceptions\PageNotFoundException;
 
 class News extends BaseController
-
 {
-    public function index()
+   public function index()
     {
         $model = model(NewsModel::class);
 
@@ -20,8 +20,9 @@ class News extends BaseController
             . view('news/index')
             . view('templates/footer');
     }
-	
-	public function view($slug = null)
+
+
+    public function view($slug = null)
     {
         $model = model(NewsModel::class);
 
@@ -37,8 +38,7 @@ class News extends BaseController
             . view('news/view')
             . view('templates/footer');
     }
-	
-    public function create()
+	 public function create()
     {
         helper('form');
 
@@ -75,5 +75,4 @@ class News extends BaseController
             . view('news/success')
             . view('templates/footer');
     }
-
 }
