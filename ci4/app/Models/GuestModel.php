@@ -6,10 +6,13 @@ use CodeIgniter\Model;
 
 class GuestModel extends Model
 {
-	protected $table = 'hbernante_guest';
-	
-	public function getGuest()
-	{
-		return $this->findAll();
-	}
+    protected $table = 'drmorta_myguests';
+
+    protected $allowedFields = ['name', 'email', 'website', 'comment', 'gender'];
+
+
+	 public function getGuest()
+    {     
+        return $this->findAll();
+    }
 }
